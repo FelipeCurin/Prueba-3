@@ -1,0 +1,31 @@
+{% extends 'Inicio.html' %}
+
+{% block titulo %}
+    <title>Motherboards</title>
+{% endblock %}
+
+{% block contenido %}
+{% load humanize %}
+    
+<div class="container bg-light" style="padding-top: 1%;"> 
+  <div class="card-columns">
+  {% for p in productos %}
+
+      <div class="card">
+
+          {% if p.imagen %}
+          <img src="{{ p.imagen.url }}" class="card-img-top" alt="imagen-producto">
+          {% endif %}
+
+          <div class="card-body bg-dark" style="color: white;">
+            <h5 >{{p.nombre}}</h5>
+            <h4>Fabricante: {{p.fabricante}}</h4>
+            <h4>Precio: ${{p.precio | intcomma}}</h4>
+            <h4>stock: {{p.stock}}</h4>
+          </div>
+          
+      </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}

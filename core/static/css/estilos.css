@@ -1,0 +1,81 @@
+body{
+    background-image: url("../img/backgroud.jpg");
+}
+hr {
+    background-color: gray;
+    padding: 20px;
+    position: relative;
+    text-align:center;
+}
+.bckezreal{
+    background: linear-gradient(rgba(255, 255, 255, 0), rgb(1, 7, 26)), url(https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ezreal_0.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100vw;
+}
+.bckakali{
+    background-image: linear-gradient(rgba(255,255,255,0), rgb(1, 7, 26)), url(https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Akali_0.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100vw;
+}.bckirelia{
+    background-image: linear-gradient(rgba(255,255,255,0), rgb(1, 7, 26)), url(https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Irelia_0.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100vw;
+}
+
+.form {
+    position: relative;
+    z-index: 1;
+    max-width: 350px;
+    margin: 0 auto 100px;
+    padding: 30px;
+    margin-top: 70px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    text-align: center;
+}
+::placeholder {
+    color: rgb(233, 233, 233);
+    opacity: 1; 
+}
+
+.form input {
+    outline: 0;
+    width: 100%;
+    border: 1px solid rgba(46, 45, 45, 0.164);
+    margin: 0px;
+    padding: 6px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.form label {
+    text-align: left;
+    display: block;
+    font-size: 15px;
+}
+
+.form p {
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding: 0;
+    border: 0;
+}
+
+.form img {
+    max-width: 35%;
+    margin: 15px;
+}
+
+.form .alert{
+    margin-top: 10px;
+    font-size: 15px;
+}

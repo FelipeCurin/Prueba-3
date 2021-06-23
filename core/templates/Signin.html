@@ -9,32 +9,34 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/estilos.css">
-
-    <title></title>
+    <link rel="stylesheet" href="../static/css/estilos.css">
+    <link>
+    <title>Iniciar Sesion</title>
 </head>
 
 <body>
-    <form method="POST" action="" id="formulario">
-        <div class="form">
-            <img src="../img/user-login.png">
-            <div class="form-group">
-                <label for="username">Usuario</label>
-                <input type="text" id="username" placeholder="Ingreso usuario" />
-                <div class="alert alert-danger" role="alert" id="error">El usuario debe tener entre 4 a 16 caracteres
+    <div class="container">
+        <form method="POST" action="" id="formulario">
+            <div class="form bg-dark">
+                <img src="../static/img/user-signin.png">
+                <div class="form-group">
+                    <label for="username" class="text-white">Usuario</label>
+                    <input type="text" id="username" placeholder="Ingreso usuario" class="bg-secondary"/>
+                    <div class="alert alert-danger" role="alert" id="error">El usuario debe tener entre 4 a 16 caracteres
+                    </div>
                 </div>
+                <div class="form-group">
+                    <label for="password" class="text-white">Clave</label>
+                    <input type="password" id="password" placeholder="Ingrese clave" class="bg-secondary" />
+                    <div class="alert alert-danger" role="alert" id="error1">La contraseña debe tener entre 8 a 16
+                        caracteres</div>
+                </div>
+                <button type="submit" class="btn btn-success btn-block" id="login">Login</button>
+                <button type="reset" class="btn btn-danger btn-block" id="clean">Limpiar</button>
+                <p><a href="../html/Validacion.html">¿Todavia sin cuenta?</a></p>
             </div>
-            <div class="form-group">
-                <label for="password">Clave</label>
-                <input type="password" id="password" placeholder="Ingrese clave" />
-                <div class="alert alert-danger" role="alert" id="error1">La contraseña debe tener entre 8 a 16
-                    caracteres</div>
-            </div>
-            <button type="submit" class="btn btn-success btn-block" id="login">Login</button>
-            <button type="reset" class="btn btn-danger btn-block" id="clean">Limpiar</button>
-            <p><a href="../html/Validacion.html">¿Todavia sin cuenta?</a></p>
-    </form>
-
+        </form>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
